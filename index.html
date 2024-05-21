@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ushasri Katreddi Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="https://media.licdn.com/dms/image/D5635AQFAMjFkRD8QAA/profile-framedphoto-shrink_400_400/0/1689429484441?e=1716544800&v=beta&t=A2pz-pB0c3V13hNqhbo0mEq68irxaqVlxF9vtYdikCs">
+
+    <!-- <link rel = "stylesheet" href= "styles.css"> -->
+    <style>
+      *{
+    margin : 0;
+    padding : 0;
+    font-family : 'Poppins' , sans-serif;
+    box-sizing : border-box;
+
+    
+
+  }
+html
+{
+    scroll-behavior: smooth;
+}
+body{
+    background :black;
+    color : #fff;
+}
+#header
+{
+    width : 100%;
+    height : 100vh;
+    /* background-image: url("C:\Pictures\usha_photo.png"); */
+    background-size : cover;
+    background-position: right;
+}
+
+.container
+{
+    padding :10px 10% ;
+}
+ nav
+{
+    display : flex;
+    align-items: top;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo
+{
+    width : 300px;
+}
+nav-img
+{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto; /* Adjust as needed */
+    height: auto; /* Adjust as needed */
+}
+nav ul li
+{
+  display:inline-block;
+  list-style:none;
+  margin:10px 20px;
+}
+
+.nav ul li a{
+    color:#fff;
+    text-decoration:none;
+    font: size 18px;
+    position:relative;
+}
+.nav ul li a::after{
+    content:'';
+    width: 0%;
+    height:3px;
+    background:#ff004f ;
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    transition: 0.5s;
+}
+.nav ul li a:hover::after
+{
+    width:100%;
+}
+.header-text
+{
+    margin-top :20%; 
+    font-size: 30px;
+}
+.header-text h6
+{
+    font-size: 30px;
+    margin-top :0%;
+}
+.header-text h4
+{
+    align-items: "top";
+    font-stretch: normal;
+    font-size: 40px;
+    margin-top :0%;
+}
+/*----------about--------------*/
+#about
+{
+    padding: 80px 0 ;
+    color: #ababab;
+}
+.row
+{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1
+{
+    flex-basis: 35% ;
+}
+.about-col-1 img
+{
+   width:100%;
+   border-raduis:15px;
+
+}
+.about-col-2
+{
+    flex-basis: 60%;
+}
+.sub-title
+{
+     font-size: 60px;
+     font-weight: 600;
+     color: #fff;
+}
+.tab-titles
+{
+    display: flex;
+    margin: 20px 0 40px ;
+}
+.tab-links
+{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500 ;
+    cursor:pointer;
+    position: relative;
+}
+.tab-links::after
+{
+    content: '';
+    width:0 ;
+    height:3px ;
+    background: #ff004f;
+    position: absolute;
+    left:0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after
+{
+    content:'';
+    width: 0%;
+    height:3px;
+    background:#ff004f ;
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    transition: 0.5s;
+}
+
+
+.tab-links:hover::after
+{
+   width: 100%;
+
+}
+.tab-links:hover::after
+{
+   width: 100%;
+
+}
+.tab-contents ul li
+{
+  list-style:none;
+  margin:10px 0;
+}
+.tab-contents ul li span
+{
+   color: #b54769;
+   font-size: 14px;
+}
+.tab-contents
+{
+    display:none;
+}
+.tab-contents.active-tab
+{
+    display:block;
+}
+/*------------------------------- services-------------------- */
+#services
+{
+    padding : 30px 0;
+}
+.services-list
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(250px , 1fr));
+    grid-gap:40px;
+    margin-top: 50px;
+}
+.services-list div
+{
+   background: #262626;
+   padding: 40px;
+   font-size: 13px ;
+   font-weight:300 ;
+   border-raduis: 10px ;
+   transition: background 0.5s ,transform 0.5s ;
+}
+.services-list div i
+{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-list div h2
+{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div a
+{
+    text-decoration: none;
+    color: beige;
+    font-size:12px ;
+    margin-top:20px ;
+    display:inline-block;
+}
+.services-list div:hover
+{
+    background: #ff004f;
+    transform: translateY(-10px) ;
+}
+
+.services-list div i
+{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-list div h2
+{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div a
+{
+    text-decoration: none;
+    color: beige;
+    font-size:12px ;
+    margin-top:20px ;
+    display:inline-block;
+}
+.services-list div:hover
+{
+    background: #ff004f;
+    transform: translateY(-10px) ;
+}
+
+
+#achievements
+{
+    padding : 30px 0;
+}
+.achievements-list
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(250px , 1fr));
+    grid-gap:40px;
+    margin-top: 50px;
+}
+.achievements-list div
+{
+   background: #262626;
+   padding: 40px;
+   font-size: 13px ;
+   font-weight:300 ;
+   border-raduis: 10px ;
+   transition: background 0.5s ,transform 0.5s ;
+}
+.achievements-list div i
+{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.achievements-list div h2
+{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.achievements-list div a
+{
+    text-decoration: none;
+    color: beige;
+    font-size:12px ;
+    margin-top:20px ;
+    display:inline-block;
+}
+.achievements-list div:hover
+{
+    background: #ff004f;
+    transform: translateY(-10px) ;
+}
+
+.achievements-list div i
+{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.achievements-list div h2
+{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.achievements-list div a
+{
+    text-decoration: none;
+    color: beige;
+    font-size:12px ;
+    margin-top:20px ;
+    display:inline-block;
+}
+.achievements-list div:hover
+{
+    background: #ff004f;
+    transform: translateY(-10px) ;
+}
+
+
+/* ----------------projects------------ */
+
+#projects
+{
+    padding: 50px 0;
+}
+.work-list
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(250px , 1fr));
+    grid-gap:40px;
+    margin-top: 50px;
+}
+.work
+{
+    border-raduis:10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img
+{
+    width:100%;
+    border-radius: 10px;
+    display:block;
+}
+.work i
+{
+    color:#ff004f;
+    margin-right:15px ;
+    font-size:15px;
+}
+
+/* contact */
+.contact-left
+{
+    flex-basis:35%;
+}
+.contact-right
+{
+    flex-basis:60%;
+}
+.contact-left p
+{
+    margin-top: 30px;
+}
+.contact-left p i
+{
+    color:#ff004f;
+    margin-right:15px ;
+    font-size:25px;
+}
+.social-icons
+{
+    margin-top: 30px;
+
+}
+.social-icons a
+{
+    text-decoration:none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    dispay: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover
+{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+.btn.btn2
+{
+    display: inline-block;
+    background: #ff004f;
+}
+.contact-right form
+{
+    width:100%;
+
+}
+form input,form textarea
+{
+    width : 100%;
+    border:0;
+    outline:none;
+    background:#262626;
+    padding: 15px;
+    margin: 15px 0;
+    color:#fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form btn2
+{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px ;
+    cursor : pointer;
+}
+.copyright
+{
+    width : 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.copyright i
+{
+    color: #ff004f;
+}
+/* ----------------------------CSS FOR SMALL SCREEN----------- */
+
+/* nav.fas
+{
+    display:none;
+} */
+
+
+
+@media only screen and (max-width : 600px)
+{
+    #header{
+        /* background-image:url("https://media.licdn.com/dms/image/D5622AQEhoz-CfZayCQ/feedshare-shrink_800/0/1715972684795?e=1718841600&v=beta&t=PzERTuuvIQ0YTnuha3QQpNMo2-oSS9BqbfJ4MKwm5Ko") ; */
+    }
+    .header-text
+    {
+        margin-top: 100%;
+        font-size:16px;
+    }
+    .header-text h1
+    {
+        font-size: 30px;
+    }
+    /* nav.fas
+    {
+    display:block;
+    font-size: 25px;
+    }
+    nav ul
+    {
+        background: #ff004f;
+        position: fixed;
+        top:0 ;
+        right:-200px;
+        width:200px;
+        height:100vh;
+        padding-top:50px;
+        z-index:2;
+        transition:right 0.5s;
+
+    }
+    nav ul li
+    {
+        display:block;
+        margin: 25px;
+    } */
+    /*nav ul.fas
+    {
+        position: absolute;
+        top: 25px;
+        left:25px;
+        cursor:pointer;
+    }*/
+    /* .sub-title
+    {
+        font-size: 40px;
+    } */
+    /* .about-col-1,.about-col-2
+    {
+        flex-basis : 100%;
+    }
+    .about-col-1
+    {
+        margin-bottom: 30px;
+    }
+    .about-col-2
+    {
+        font-size: 14px ;
+    } */
+    .tab-links
+    {
+        font-size: 16px;
+        margin-right:20px;
+    }
+    .contact-left,.contact-right
+    {
+        flex-basis:100%;
+    }
+    .copyright
+    {
+        font-size: 14px;
+    }
+}
+#msg
+{
+    color: #61b752;
+    margin-top : -40px;
+    display:block;
+}
+
+
+    </style>
+    <script src="https://kit.fontawesome.com/e041534f3d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+    <div id = "header">
+      <div class = "container">
+        <div class = "nav-img">
+        <img src="https://media.licdn.com/dms/image/D5622AQEhoz-CfZayCQ/feedshare-shrink_800/0/1715972684795?e=1718841600&v=beta&t=PzERTuuvIQ0YTnuha3QQpNMo2-oSS9BqbfJ4MKwm5Ko" align = "right" heiht="500px" width="400px" padding:10%>
+      </div>
+        <nav>
+            <img src="https://media.licdn.com/dms/image/D5622AQF2Q7ZeIKVZnw/feedshare-shrink_800/0/1716092673168?e=1718841600&v=beta&t=npIz6sWTtzta8hOUn8i_uRvZrIC6Ly6MMEK7sbgMknE" class = "logo" height="30" align = "right" padding=10px 10% >        
+            <ul id="sidemenu" >
+                <li><a href="#header"><span style="color: #ff004f;"><h3>Home</h3></span></a></li>
+                <li><a href="#about"><span style="color: #ff004f;"><h3>About</h3></span></a></li>
+                <li><a href="#services"><span style="color: #ff004f;"><h3>Skills</h3></span></a></li>
+                <li><a href="#about"><span style="color: #ff004f;"><h3>Achievements</h3></span></a></li>
+                <li><a href="#about"><span style="color: #ff004f;"><h3>Experience</h3></span></a></li>
+                <li><a href="#about"><span style="color: #ff004f;"><h3>Education</h3></span></a></li>
+                <!-- <i class ="fas fa-times"  onclick="closemenu()"></i> -->
+            </ul>
+            <!-- <i class ="fas fa-bars" onclick="openmenu()"></i> -->
+            </nav>
+            <div class ="header-text" >
+                <h4><I>Web Developer<I></h4>
+                <h6><span style="color: #ff004f;">Hi, I'm <span style="color: #fff;"> Ushasri katreddi<br></span> from Andhra Pradesh,India</span></h6>
+            </div>
+      </div>
+
+    </div>
+
+
+
+<!-- about -->
+    <div id="about">
+      <div class ="container">
+        <div class ="row">
+          <div class ="about-col-1">
+            <img src="https://media.licdn.com/dms/image/D5622AQFxI9O6hlxIAg/feedshare-shrink_800/0/1716085321412?e=1718841600&v=beta&t=Yp76HZGvQx52OPbnPaet2Plp4TT84u6okIJC6vnHP3Y" alt="Learn about me" height="750px" width="750px">
+          </div>
+          <div class ="about-col-2">
+            <h1 class ="sub-title">About Me</h1>
+            <p>Studying B.Tech in Computer Science and Engineering at Andhra University, I am deeply passionate about learning new technologies and mastering problem-solving skills. Alongside my academic pursuits, I have excelled in skating, achieving notable success with three national bronze medals and eight gold medals in district and state competitions. Despite my dedication to skating, I maintain a commendable CGPA of 8.26 at college, reflecting my commitment to academic excellence and balanced pursuit of both my passions.</p>
+            <div class ="tab-titles">
+              <p class ="tab-links active-link" onclick="opentab('services')">Skills</p>
+              <p class ="tab-links " onclick="opentab('achievements')">Achievements</p>
+              <p class ="tab-links " onclick="opentab('experience')">Experience</p>
+              <p class ="tab-links " onclick="opentab('education')">Education</p>
+            </div>
+
+
+
+<!-- skills -->
+            <div class ="tab-contents active-tab" id="services">
+              <ul>
+                <li><span>Programming Languages</span><br>Advance : Python , c++ , Java<br>Intermediate : C , DSA using Java , R , Javascript <br>Novice : Assembly language </li>
+                <li><span>Tools</span><br>GIT<br>Linux<br>Windows</li>
+                <li><span>Frameworks</span><br>Angular<br>Node.js<br>React.js<br>Express.js</li>
+                <li><span>Technologies</span><br>HTML , CSS , Tailwind CSS.<br>Cloud computing<br>SQL , MongoDB , PHP<br>AWS services </li>
+                <li><span>Others</span><br>Technical Content writer<br>Public speaking , Team management<br>Exploring new technologies</li>
+              </ul>
+            </div>
+
+
+    <!-- achievements         -->
+
+            <div class ="tab-contents " id="achievements">
+              <ul>
+                <li><span><h3>Certifications</h3></span></li>
+                <li><span>Introduction to python</span><br>By Microsoft </li>
+                <li><span>Virtual SDE</span><br>By Walmart</li>
+                <li><span>Azure fundamentals</span><br>By Microsoft</li>
+                <li><span>Introduction to AI</span><br>By Cognizant</li>
+                <li><span>Introduction to content delivery network</span><br>By Infosys</li>
+                <li><span>Python basics </span><br>By Hackerrank </li>
+                <li><span>Introduction to Java</span><br>By Infosys</li>
+                <br>
+                <li><span><h3>competitions</h3></span></li>
+                <li><span>Larsen and Toubo</span><br>Participated in online assesment. </li>
+                <li><span>Flipkart</span><br>Participated in online coding contest. </li>
+                <li><span>Unstop Talent Park</span><br>Participated in coding contest. </li>
+                <li><span>ByteBash: The ultimate code battle for Geeks</span><br>Participated in coding contest. </li>
+                <br>
+                <li><span><h3>Ranks in coding platforms</h3></span></li>
+                <li><span>geeksforgeeks</span><br>Country Rank : 302 </li>
+                <li><span>Leetcode</span><br> Global Rank:3238743 </li>
+                <li><span>Unstop</span><br>Glaobal Rank:294567 </li>
+                
+              </ul>
+            </div>
+            
+
+<!-- experience -->
+            <div class ="tab-contents" id="experience">
+              <ul>
+                <li><span>Cognifyz Technologies</span><br>Intern | May 2024 - June 2023 | Visakhapatnam, India <br> MongoDB | Python | HTML | CSS | Javascript | SQL<br> As a software development intern, my responsibilities include collaborating with the development team to design and implement software solutions, writing code, conducting testing, debugging, and contributing to the overall software development lifecycle while learning and growing in the field.</li>
+                <li><span>Codsoft</span><br>Intern Part-Time | Dec 2023 - Jan 2024<br>C++ | Problem solving <br>Using C++, developed efficient algorithms and solutions for various computational problems. Leverage its features like classes, functions, and pointers to create robust applications, data structures, and perform tasks like sorting, searching, and manipulation.</li>
+                <li><span>TechnoHacks EduTech</span><br>Intern Part-Time | Aug 2023 - Sep 2023<br>Python | Tkinter <br>Developed an ATM machine project using Python involves building a simple
+                  console-based application that simulates the functionalities of an Automated
+                  Teller Machine (ATM).</li>
+                <li><span>RINL Vizag Steel</span><br>Intern | June 2023 - July 2023 | Visakhapatnam, India <br> MongoDB | Python | HTML | CSS | Javascript | SQL<br> Developed a website for RINL (Rashtriya Ispat Nigam Limited) steel plant
+                  which involves designing a homepage with some basic sections like login page ,
+                  purchase page and many multiple pages.</li>
+                <li><span>1Stop.AI</span><br>Intern Part-Time | April 2023 - May 2023<br>HTML | CSS | Javascript | Bootstrap<br>Developed a user friendly website named "World of Internships" showcasing the internships provided by the organization</li>
+                
+        
+              </ul>
+            </div>
+
+
+
+<!-- education -->
+            <div class ="tab-contents" id="education">
+              <ul>
+                <li><span>B. Tech , CSE</span><br>Andhra university college of engineering | 2021 - 2025 | Visakhapatnam<br>CGPA: 8.37 || SGPA : 8.86 </li>
+                <li><span>Intermediate , MPC</span><br>Sri chaitanya Junior College |2019-21 | Visakhapatnam <br>Percentage: 91%</li>
+                <li><span>Schooling , CBSE</span><br>Delhi Public School | 2009-19 | Visakhapatnam<br>Percentage: 87.2%</li>
+              </ul>
+            </div>
+            
+            
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+<!-- services -->
+<div id="services">
+  <div class = "container">
+    <h1 class ="sub-title">Why hire me?</h1>
+    <div class="services-list">
+       <div>
+        <i class="fa-solid fa-code"></i>
+         <h2>Web developer</h2>
+         <p>As a web developer proficient in HTML, CSS, and JavaScript, I craft visually appealing and responsive websites. My expertise extends to server-side development using Node.js, Express.js, and PHP, allowing me to create dynamic and interactive web applications. I am skilled in database management with MongoDB and SQL, ensuring efficient data storage and retrieval. Additionally, I specialize in building modern and scalable user interfaces with React.js. With a solid foundation in front-end and back-end technologies, I deliver comprehensive solutions that meet client needs and enhance user experiences, continuously adapting and learning to stay abreast of industry trends.</p>
+         <a href = "#">Learn </a>
+       </div>
+       <div>
+        <i class="fa-solid fa-crop"></i>
+        <h2>Data structures and Algorithms</h2>
+        <p>As an undergraduate, I possess a solid understanding of Data Structures and Algorithms. Through coursework and practical applications, I have honed my skills in designing, implementing, and analyzing efficient algorithms to solve complex problems. I am adept at utilizing fundamental data structures such as arrays, linked lists, trees, and graphs to organize and manipulate data effectively. Moreover, I have developed proficiency in algorithmic analysis, enabling me to evaluate the time and space complexity of algorithms. This knowledge equips me to tackle challenges in software development, optimize code performance, and contribute effectively to projects requiring algorithmic solutions.</p>
+        <a href = "#">Learn </a>
+      </div>
+      <div>
+        <i class="fa-brands fa-app-store-ios"></i>
+        <h2>Problem solving </h2>
+        <p>As a programmer with expertise in Java, C++, and Python, I excel in problem-solving across diverse domains. Leveraging the strengths of each language, I craft efficient and scalable solutions to complex challenges. With Java, I develop robust and platform-independent applications, utilizing its object-oriented paradigm for structured code. In C++, I leverage its power and performance to implement algorithms and data structures for optimal efficiency. Python, with its simplicity and versatility, aids in rapid prototyping and scripting tasks. This comprehensive skill set enables me to tackle a wide range of problems, delivering innovative solutions and driving continuous improvement in software development.</p>
+        <a href = "#">Learn </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!------------- projects---------------- -->
+ <div id="projects">
+  <div class="container">
+    <h1 class ="sub-title">My Projects</h1>
+    <div class="work-list">
+      <div class="work">
+        <div>
+          <i class="fa-solid fa-code"></i>
+           <h2>Interactive Portfolio</h2>
+           <p><u>Problem statement</u>:Create an interactive portfolio showcasing skills, projects, and achievements, enhancing user engagement and effectively demonstrating professional expertise and creativity.<br>Welcome to my interactive portfolio! Explore my projects, showcasing diverse skills and innovative solutions across various domains. Dive into each project to see detailed descriptions, technologies used, and the impact achieved. Visit the "About Me" section to learn more about my background, experiences, and passions that drive my work. If you have any questions, collaborations, or opportunities, head to the "Contact" section where you can easily reach out to me. Let's connect and create something amazing together! </p>
+           <a href = "https://github.com/Ushasri-Katreddi/Smart_door_security/tree/main"><span style="color: #ff004f;">Github</span> <i class="fa-solid fa-up-right-from-square"></i>  </a>
+         </div>
+         <br>
+        <div>
+          <i class="fa-solid fa-code"></i>
+           <h2>Smart door security system</h2>
+           <p><u>Problem statement</u>: The primary objective of the house security project is to design, develop, and
+            implement an integrated home security system that enhances the safety of residential
+            properties.<br>A smart door security system leverages deep learning and Python to enhance home security. Utilizing a face recognition library, the system captures and analyzes live video feeds to identify authorized individuals. When a person approaches, the camera captures their image, and the deep learning model processes the data to match it against a pre-registered database. If a match is found, the door unlocks automatically, ensuring seamless access for authorized users while keeping intruders out. This intelligent system offers a robust, efficient, and user-friendly solution for modern security needs.</p>
+           <a href = "https://github.com/Ushasri-Katreddi/Smart_door_security/tree/main"><span style="color: #ff004f;">Github</span> <i class="fa-solid fa-up-right-from-square"></i>  </a>
+         </div>
+         <br>
+         <div>
+          <i class="fa-solid fa-code"></i>
+           <h2>World of internships website</h2>
+           <p><u>Problem statement</u>:Created 'World of Internships' website using HTML, CSS, JavaScript, and Bootstrap to connect students with global internship opportunities, featuring search functionality, internship listings, application tracking, and user profiles. <br>"World of Internships" is a dynamic online platform connecting aspiring professionals with valuable internship opportunities worldwide. Through intuitive design and seamless navigation, users can explore diverse internships across industries, tailored to their interests and career goals. With responsive layouts and Bootstrap integration, the site ensures accessibility across devices, fostering a user-friendly experience. JavaScript functionalities enhance interactivity, offering features like real-time notifications and personalized recommendations. Through HTML, CSS, and advanced web technologies, World of Internships provides a comprehensive hub for both students and employers, facilitating meaningful connections and fostering professional growth.</p>
+           <a href = "https://github.com/Ushasri-Katreddi/WEB-DEVELOPMENT"><span style="color: #ff004f;">Github</span> <i class="fa-solid fa-up-right-from-square"></i>  </a>
+         </div>
+         <br>
+         <div>
+          <i class="fa-solid fa-code"></i>
+           <h2>Steelplant website</h2>
+           <p><u>Problem statement</u>: Developed a website for RINL (Rashtriya Ispat Nigam Limited) steel plant which involves designing a homepage with some basic sections like login page , purchase page and many multiple pages.<br>Crafted a robust website for RINL (Rashtriya Ispat Nigam Limited) steel plant, featuring a sleek homepage highlighting essential sections: a user-friendly login interface, streamlined purchase page, and an array of additional pages catering to diverse needs. Each section meticulously designed to ensure intuitive navigation and seamless user experience. With a focus on functionality and aesthetics, the website offers a comprehensive platform for stakeholders to interact efficiently. From procurement to information dissemination, every aspect is meticulously curated to reflect RINL's commitment to excellence and technological advancement, shaping a digital presence that aligns with its esteemed reputation.</p>
+           <a href = "https://github.com/Ushasri-Katreddi/Steelplant-website"><span style="color: #ff004f;">Github </span><i class="fa-solid fa-up-right-from-square"></i>  </a>
+         </div>
+        <!-- <img src="https://tse2.mm.bing.net/th/id/OIP.DPNoWJ3Au35Fw58Sn2oj1wHaGo?rs=1&pid=ImgDetMain" width = "50px" height="150px" alt="Face recognition">
+        <div class ="layer">
+          <h3>Smart door security system</h3>
+          <h4>Python | Deep learning | Face recognition</h4>
+          <p><u>Problem statement</u>: The primary objective of the house security project is to design, develop, and
+            implement an integrated home security system that enhances the safety of residential
+            properties.
+            </p>
+            <a href="https://github.com/Ushasri-Katreddi/Smart_door_security/tree/main"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+      </div>
+      <div class="work">
+         <img src="https://internshipsworld.com/wp-content/uploads/2022/10/Internships-World-Site-Logo.png" width="50px" height="150px"  alt="World of internships"> -->
+        <!-- <div class ="layer">
+          <h3>World of internships website</h3>
+          <h4>HTML | CSS | Javascript | bootstrap</h4>
+          <p><u>Problem statement</u>: Created 'World of Internships' website using HTML, CSS, JavaScript, and Bootstrap to connect students with global internship opportunities, featuring search functionality, internship listings, application tracking, and user profiles."</p>
+            <a href="https://github.com/Ushasri-Katreddi/WEB-DEVELOPMENT"><i class="fa-solid fa-up-right-from-square"></i></a> -->
+      <!-- </div>
+      <div class="work"> -->
+        <!-- <img src="https://tse4.mm.bing.net/th/id/OIP.wd6VZW_GLyZQfZCOd-q2YwHaJ_?rs=1&pid=ImgDetMain" width ="50px"height="150px"  alt="Vizag steelplant website"> -->
+        <!-- <div class ="layer" >
+          <h3>World of internships website</h3>
+          <h4>HTML | CSS | Javascript | bootstrap</h4>
+          <p><u>Problem statement</u>: Created 'World of Internships' website using HTML, CSS, JavaScript, and Bootstrap to connect students with global internship opportunities, featuring search functionality, internship listings, application tracking, and user profiles."</p>
+            <a href="https://github.com/Ushasri-Katreddi/WEB-DEVELOPMENT"><i class="fa-solid fa-up-right-from-square"></i></a>
+      </div> -->
+       
+      </div>
+    </div>
+  </div>
+ </div>
+
+
+
+ <!-- ---------------contact------------------------ -->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class ="sub-title" >Contact Me</h1>
+        <p><i class="fa-solid fa-envelope"></i>ushasrikatreddi8@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> 9490405012</p>
+        <div class ="social-icons">
+          <a href="https://www.linkedin.com/in/ushasri-katreddi-29b758264/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/Ushasri-Katreddi/Ushasri-Katreddi"><i class="fa-brands fa-github"></i></i></a>
+          <a href="https://leetcode.com/u/USHASRI-KATREDDI/">Leetcode<i class="<i class="fa-solid fa-circle-user"></i></a>        
+          <a href="https://www.geeksforgeeks.org/user/ushasrikafws7/?utm_source=geeksforgeeks&utm_medium=my_profile&utm_campaign=auth_user">geeksforgeeks</a>
+        </div>
+        <a href="https://media.licdn.com/dms/image/D5622AQGMoTVn4DP4JQ/feedshare-shrink_800/0/1716055953358?e=1718841600&v=beta&t=aAD6pyW-xWCkex5Tt4IEsHbfR_9tsagGIT7FcvpqByg"class="btn btn2"><span style="color: #fff;">Download Resume</span></a>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name = "Name" placeholder="Your name" required>
+          <input type="email" name="email" placeholder="your e-mail" required>
+          <textarea name="Message"  rows="6" placeholder ="your message" ></textarea>
+          <button type="submit" class="btn btn2"><span style="color: #fff;">Submit</span></button>
+        </form>
+
+        <span id = "msg"></span>
+      </div>
+    </div>
+  </div>
+    <div class="copyright">
+      <p>Copyright @ Ushasri Katreddi . Made with <i class="fa-solid fa-heart"></i> by Ushasri Katreddi</p>  
+    </div>
+</div>
+
+<script>
+  alert("Note : If using mobile phone , do use 'desktop view' for better accessibility.");
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents")
+function opentab(tabname)
+{
+   for(tablink of tablinks)
+   {
+    tablink.classList.remove("active-link");
+   }
+   for(tabcontent of tabcontents)
+   {
+    tabcontent.classList.remove("active-tab");
+   }
+   event.currentTarget.classList.add("active-links");
+   document.getElementById(tabname).classList.add("active-tab");
+}
+    </script>
+    <!-- <script>
+      var sidemenu=document.getElementById("sidemenu");
+      function openmenu()
+      {
+        sidemenu.style.right="0";
+      }
+      function closemenu()
+      {
+        sidemenu.style.right="-200px";
+      }
+    </script> -->
+    <!-- <form name="submit-to-google-sheet">
+      <input name="email" type="email" placeholder="Thank you for visiting" required>
+      <button type="submit"></button>
+    </form> -->
+    
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbyWg5zQDkGjxZ6wWMO93wb6W-yOitU5yxPy-JHJfwEbmFeNJrUBtmOap_sX3MCCS2P2/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg");
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML ="Message sent successfully"
+            setTimeout(function()
+            {
+              msg.innerHTML=""
+            },5000)
+            })
+          form.reset()
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+</body>
+</html>
